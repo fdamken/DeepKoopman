@@ -1,7 +1,9 @@
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 import helperfns
+
+tf.disable_v2_behavior()
 
 
 def weight_variable(shape, var_name, distribution='tn', scale=0.1):

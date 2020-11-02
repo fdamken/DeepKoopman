@@ -2,10 +2,12 @@ import os
 import time
 
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 import helperfns
 import networkarch as net
+
+tf.disable_v2_behavior()
 
 
 def define_loss(x, y, g_list, weights, biases, params):
