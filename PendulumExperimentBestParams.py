@@ -59,5 +59,5 @@ params['min_3hr'] = .000004
 params['min_4hr'] = .0000005
 params['min_halfway'] = 1
 
-for count in range(200):  # loop to do random experiments
+for count in range(10):  # loop to do random experiments
     training.main_exp(copy.deepcopy(params))
